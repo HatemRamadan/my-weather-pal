@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from 'axios';
+import './searchComponent.css';
 class SearchComponent extends Component{
     constructor(props){
         super(props);
@@ -40,13 +41,13 @@ class SearchComponent extends Component{
     render(){
        
         return(
-            <div style={{marginTop:"9%"}}><h1 style={{fontSize:"80px", textShadow:"30px"}}>
+            <div className="search-component"><h1 className="title">
                 <span className="text-success" >4 S</span> 
                 <span className="text-warning">EA</span>
                 <span className="text-danger">SO</span>
                 <span className="text-primary">NS</span>
             </h1>
-                <h2>
+                <div className="search-bar">
                 <input className="mb-3" id="searchBar" list="cities" placeholder="Search... " onChange={this.getSuggestions}></input>
                 
                 <div>
@@ -57,7 +58,7 @@ class SearchComponent extends Component{
                         );
                     })}
                 </div>
-                </h2>
+                </div>
             </div>
         );
     }

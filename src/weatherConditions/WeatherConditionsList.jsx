@@ -20,9 +20,9 @@ class WeatherConditionList extends Component{
                 this.props.cities.map(city=>{
                     return(
                         <span className="m-2 badge badge-secondary" key={city.timestamp}>
-                            <h5 className="m-1">
+                            <div className="city m-1">
                             {city.cityName+" "+city.degree+" "+city.unit}
-                            </h5>
+                            </div>
                         </span>
                     );
                 })
