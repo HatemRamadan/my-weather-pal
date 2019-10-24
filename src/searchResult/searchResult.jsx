@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import './searchResult.css';
 
 class SearchResult extends Component{
     constructor(props){
@@ -14,14 +14,14 @@ class SearchResult extends Component{
         if(this.props.city.cityName){
             jsx=(
                 <div className="badge badge-primary"> 
-                    <h2>{this.props.city.cityName+", "+this.props.city.country}</h2>
-                    <h2>{this.props.city.degree+" "+this.props.city.unit}</h2>
-                    <h2>{this.props.city.condition}</h2>
+                    <div className="detail">{this.props.city.cityName+", "+this.props.city.country}</div>
+                    <div className="detail">{this.props.city.degree+" "+this.props.city.unit}</div>
+                    <div className="detail">{this.props.city.condition}</div>
                 </div>
             );
         }
         return(
-            <h2>
+            <h2 className="details">
                 {jsx}
             </h2>
 
