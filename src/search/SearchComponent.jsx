@@ -16,7 +16,7 @@ class SearchComponent extends Component{
             apikey: "HMGEbEYNWCbGvFuk2r0nGADprXpCSaUy",
             q: e.target.value,
         };
-        axios.get("http://dataservice.accuweather.com/locations/v1/cities/autocomplete",{params})
+        axios.get("https://dataservice.accuweather.com/locations/v1/cities/autocomplete",{params})
         .then(res => {
             var resultCities=[];
             res.data.forEach(element => {

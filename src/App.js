@@ -31,7 +31,7 @@ class App extends Component {
     const params = {
       apikey: "HMGEbEYNWCbGvFuk2r0nGADprXpCSaUy",
   };
-  axios.get("http://dataservice.accuweather.com/currentconditions/v1/"+city.key,{params})
+  axios.get("https://dataservice.accuweather.com/currentconditions/v1/"+city.key,{params})
   .then(res => {
     console.log(res.data[0]);
       const response = res.data[0];
