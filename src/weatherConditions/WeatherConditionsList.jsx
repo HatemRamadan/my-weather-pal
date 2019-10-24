@@ -14,7 +14,7 @@ class WeatherConditionList extends Component{
         if(this.props.cities.length>0){
             jsx= (<div className="slide-top">
             <h4 className="text-danger">
-                Previous Locations
+                Search History
             </h4>
             {
                 this.props.cities.map(city=>{
