@@ -14,7 +14,7 @@ class SearchComponent extends Component{
         if(e.target.value.length>0){
             
         const params = {
-            apikey: "HMGEbEYNWCbGvFuk2r0nGADprXpCSaUy",
+            apikey: "kzFGjGonADeGLw9okRVjkkua1AaYPc3H",
             q: e.target.value,
         };
         axios.get("https://dataservice.accuweather.com/locations/v1/cities/autocomplete",{params})

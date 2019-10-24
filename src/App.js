@@ -29,7 +29,7 @@ class App extends Component {
   
   handleGetWeather =(e,city)=>{
     const params = {
-      apikey: "HMGEbEYNWCbGvFuk2r0nGADprXpCSaUy",
+      apikey: "kzFGjGonADeGLw9okRVjkkua1AaYPc3H",
   };
   axios.get("https://dataservice.accuweather.com/currentconditions/v1/"+city.key,{params})
   .then(res => {
